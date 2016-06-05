@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Virtual shop opening site</title>
+<link rel="stylesheet" href="../../Content/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../Content/css/bootstrap-select.css">
+<link href="../../Content/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="../../Content/css/flexslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../Content/css/font-awesome.min.css" />
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function()
+     { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->	
+<!-- js -->
+<script type="text/javascript" src="../../Content/js/jquery.min.js"></script>
+<!-- js -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../../Content/js/bootstrap.min.js"></script>
+<script src="../../Content/js/bootstrap-select.js"></script>
+<script type="text/javascript" src="../../Content/js/jquery.leanModal.min.js"></script>
+<link href="../../Content/css/jquery.uls.css" rel="stylesheet"/>
+<link href="../../Content/css/jquery.uls.grid.css" rel="stylesheet"/>
+<link href="../../Content/css/jquery.uls.lcd.css" rel="stylesheet"/>
+<!-- Source -->
+<script src="../../Content/js/jquery.uls.data.js"></script>
+<script src="../../Content/js/jquery.uls.data.utils.js"></script>
+<script src="../../Content/js/jquery.uls.lcd.js"></script>
+<script src="../../Content/js/jquery.uls.languagefilter.js"></script>
+<script src="../../Content/js/jquery.uls.regionfilter.js"></script>
+<script src="../../Content/js/jquery.uls.core.js"></script>
+    <link href="../../Content/css/w3-style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="#"><span>open</span>Ashop</a>
+			</div>
+			<div class="header-right">
+			<a class="account" href="/Home/Index">Logout</a>
+                <a class="account" href="/Admin/requests">View Requests</a>
+		    </div>
+		</div>
+    </div>
+    <div class="container">
+    <ul class="w3-ul">
+        @foreach(var s in ViewBag.shops){
+	    <a href="#" class="w3-center w3-card-4">
+		<li>
+		<img src="@Url.Content(s.Banner)" alt="Shop banner" class="w3-card-4 w3-left"/>
+		<section class="w3-light-gray w3-center">
+		<h5 class="title">@s.Name</h5>
+            <p> @s.Contact</p>
+		<span class="cityname">@s.Address</span>
+		</section>
+            <a class="w3-btn w3-red w3-right" href="/Admin/remove/@s.Id">Block</a>
+		<div class="clearfix"></div>
+		</li> 
+		</a>
+        }
+    </ul>
+        </div>
+@Html.Partial("_footer");
+</body>
+</html>

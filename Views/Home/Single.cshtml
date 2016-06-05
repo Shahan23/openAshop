@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>All shops</title>
+<link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/Content/css/bootstrap-select.css">
+<link href="~/Content/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="~/Content/css/jquery-ui1.css">
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->	
+<!-- js -->
+<script type="text/javascript" src="~/Content/js/jquery.min.js"></script>
+<!-- js -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="~/Content/js/bootstrap.min.js"></script>
+<script src="~/Content/js/bootstrap-select.js"></script>
+    <script src="/Scripts/jquery-1.10.2.js"></script>
+<script>
+    $(document).ready(function () {
+        var mySelect = $('#first-disabled2');
+
+        $('#special').on('click', function () {
+            mySelect.find('option:selected').prop('disabled', true);
+            mySelect.selectpicker('refresh');
+        });
+
+        $('#special2').on('click', function () {
+            mySelect.find('option:disabled').prop('disabled', false);
+            mySelect.selectpicker('refresh');
+        });
+
+        $('#basic2').selectpicker({
+            liveSearch: true,
+            maxOptions: 1
+        });
+    });
+</script>
+<script type="text/javascript" src="~/Content/js/jquery.leanModal.min.js"></script>
+<link href="~/Content/css/jquery.uls.css" rel="stylesheet"/>
+<link href="~/Content/css/jquery.uls.grid.css" rel="stylesheet"/>
+<link href="~/Content/css/jquery.uls.lcd.css" rel="stylesheet"/>
+<!-- Source -->
+<script src="~/Content/js/jquery.uls.data.js"></script>
+<script src="~/Content/js/jquery.uls.data.utils.js"></script>
+<script src="~/Content/js/jquery.uls.lcd.js"></script>
+<script src="~/Content/js/jquery.uls.languagefilter.js"></script>
+<script src="~/Content/js/jquery.uls.regionfilter.js"></script>
+<script src="~/Content/js/jquery.uls.core.js"></script>
+<script src="~/Content/js/tabs.js"></script>
+<link rel="stylesheet" href="~/Content/css/flexslider.css" media="screen" />
+</head>
+<body>
+    @Html.Partial("_header");
+<div class="single-page main-grid-border">
+		<div class="container">
+			<ol class="breadcrumb" style="margin-bottom: 5px;">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">All Shops</a></li>
+				<li class="active"><a href="mobiles.html">Mobiles</a></li>
+				<li class="active">Products</li>
+			</ol>
+			<div class="product-desc">
+				<div class="col-md-7 product-view">
+					<h2>@ViewBag.product.Dis</h2>
+					<p> <i class="glyphicon glyphicon-map-marker"></i><a href="#">state</a>, <a href="#">@ViewBag.address</a> Item id : @ViewBag.product.Id</p>
+					<div class="flexslider">
+						<ul class="slides">
+							<li data-thumb="@Url.Content(@ViewBag.product.image)">
+								<img src="@Url.Content(@ViewBag.product.image)"/>
+							</li>
+							<li data-thumb="@Url.Content(@ViewBag.product.image)">
+								<img src="@Url.Content(@ViewBag.product.image)"/>
+							</li>
+							<li data-thumb="@Url.Content(@ViewBag.product.image)">
+								<img src="@Url.Content(@ViewBag.product.image)" />
+							</li>
+						</ul>
+					</div>
+					<!-- FlexSlider -->
+					  <script defer src="~/Content/js/jquery.flexslider.js"></script>
+					<link rel="stylesheet" href="~/Content/css/flexslider.css" type="text/css" media="screen" />
+
+						<script>
+					// Can also be used with $(document).ready()
+					$(window).load(function() {
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						controlNav: "thumbnails"
+					  });
+					});
+					</script>
+					<!-- //FlexSlider -->
+					<div class="product-details">
+						<p><strong>Display </strong>: 1.5 inch HD LCD Touch Screen</p>
+						<p><strong>Summary</strong> @ViewBag.product.Dis</p>
+					
+					</div>
+				</div>
+				<div class="col-md-5 product-details-grid">
+					<div class="item-price">
+						<div class="product-price">
+							<p class="p-price">Price</p>
+							<h3 class="rate">@ViewBag.product.Price</h3>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="interested text-center">
+						<h4>Interested in this Ad?<small> Contact the Sopkeeper!</small></h4>
+						<p><i class="glyphicon glyphicon-earphone"></i>@ViewBag.Contact</p>
+					</div>
+						<div class="tips">
+						<h4>Safety Tips for Buyers</h4>
+							<ol>
+								<li><a href="#">Visit shopkeeper directly.</a></li>
+								<li><a href="#">You should get his/her CNIC.</a></li>
+							</ol>
+						</div>
+				</div>
+			<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+    @Html.Partial("_footer");
+    </body>
+    </html>

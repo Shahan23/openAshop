@@ -1,0 +1,389 @@
+﻿<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Categories</title>
+<link rel="stylesheet" href="../Content/css/bootstrap.min.css">
+<link rel="stylesheet" href="../Content/css/bootstrap-select.css">
+<link href="../Content/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->	
+<!-- js -->
+<script type="text/javascript" src="../Content/js/jquery.min.js"></script>
+<!-- js -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../Content/js/bootstrap.min.js"></script>
+<script src="../Content/js/bootstrap-select.js"></script>
+    <script src="/Scripts/jquery-1.10.2.js"></script>
+<script>
+  $(document).ready(function () {
+    var mySelect = $('#first-disabled2');
+
+    $('#special').on('click', function () {
+      mySelect.find('option:selected').prop('disabled', true);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#special2').on('click', function () {
+      mySelect.find('option:disabled').prop('disabled', false);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#basic2').selectpicker({
+      liveSearch: true,
+      maxOptions: 1
+    });
+  });
+</script>
+<script type="text/javascript" src="../Content/js/jquery.leanModal.min.js"></script>
+<link href="../Content/css/jquery.uls.css" rel="stylesheet"/>
+<link href="../Content/css/jquery.uls.grid.css" rel="stylesheet"/>
+<link href="../Content/css/jquery.uls.lcd.css" rel="stylesheet"/>
+<!-- Source -->
+<script src="../Content/js/jquery.uls.data.js"></script>
+<script src="../Content/js/jquery.uls.data.utils.js"></script>
+<script src="../Content/js/jquery.uls.lcd.js"></script>
+<script src="../Content/js/jquery.uls.languagefilter.js"></script>
+<script src="../Content/js/jquery.uls.regionfilter.js"></script>
+<script src="../Content/js/jquery.uls.core.js"></script>
+		<link rel="stylesheet" type="text/css" href="../Content/css/easy-responsive-tabs.css " />
+    <script src="../Content/js/easyResponsiveTabs.js"></script>
+</head>
+<body>
+    @Html.Partial("_header");
+	<!-- Categories -->
+	<!--Vertical Tab-->
+	<div class="categories-section main-grid-border">
+		<div class="container">
+			<h2 class="head">Main Categories</h2>
+			<div class="category-list">
+				<div id="parentVerticalTab">
+					<ul class="resp-tabs-list hor_1">
+						<li>Mobiles</li>
+						<li>Electronics & Appliances</li>
+						<li>Cars</li>
+						<li>Bikes</li>
+						<li>Furniture</li>
+						<li>Pets</li>
+						<li>Books, Sports & Hobbies</li>
+						<li>Fashion</li>
+						<li>Kids</li>
+						<li>Services</li>
+						<li>Jobs</li>
+						<li>Real Estate</li>
+					</ul>
+					<div class="resp-tabs-container hor_1">
+						<span class="active total" style="display:block;" data-toggle="modal" data-target="#myModal"><strong>All Categories</strong> (Select a category of shop)</span>
+						<div>
+							<div class="category">
+								<div class="category-img">
+									<img src="../Content/images/cat1.png" title="image" alt="" />
+								</div>
+								<div class="category-info">
+									<h4>Mobiles</h4>
+									<a href="/Home/Categories/?cat=Mobiles">View all Shops</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="sub-categories">
+								<ul>
+									<li><a href="/Home/Categories/?cat=Mobiles">mobile phones</a></li>
+									<li><a href="/Home/Categories/?cat=Mobiles">Tablets</a></li>
+									<li><a href="/Home/Categories/?cat=Mobiles">Accessories</a></li>
+									<div class="clearfix"></div>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="category">
+								<div class="category-img">
+									<img src="../Content/images/cat2.png" title="image" alt="" />
+								</div>
+								<div class="category-info">
+									<h4>Electronics & Appliances</h4>
+									<a href="/Home/Categories/?cat=Electronics">View all Shops</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="sub-categories">
+								<ul>
+									<li><a href="/Home/Categories/?cat=Electronics">Computers & accessories</a></li>
+									<li><a href="/Home/Categories/?cat=Electronics">Tv - video - audio</a></li>
+									<li><a href="/Home/Categories/?cat=Electronics">Cameras & accessories</a></li>
+									<li><a href="/Home/Categories/?cat=Electronics">Games & Entertainment</a></li>
+									<li><a href="/Home/Categories/?cat=Electronics">Fridge - AC - Washing Machine</a></li>
+									<li><a href="/Home/Categories/?cat=Electronics">Kitchen & Other Appliances</a></li>
+									<div class="clearfix"></div>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="category">
+								<div class="category-img">
+									<img src="../Content/images/cat3.png" title="image" alt="" />
+								</div>
+								<div class="category-info">
+									<h4>Cars</h4>
+									<a href="/Home/Categories/?cat=Cars">View all Shops</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="sub-categories">
+								<ul>
+									<li><a href="/Home/Categories/?cat=Cars">Commercial Vehicles</a></li>
+									<li><a href="/Home/Categories/?cat=Cars">Other Vehicles</a></li>
+									<li><a href="/Home/Categories/?cat=Cars">Spare Parts</a></li>
+									<div class="clearfix"></div>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="category">
+								<div class="category-img">
+									<img src="../Content/images/cat4.png" title="image" alt="" />
+								</div>
+								<div class="category-info">
+									<h4>Bikes</h4>
+									<a href="/Home/Categories/?cat=Bikes">View all Shops</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="sub-categories">
+								<ul>
+									<li><a href="/Home/Categories/?cat=Bikes">Motorcycles</a></li>
+									<li><a href="/Home/Categories/?cat=Bikes">Scooters</a></li>
+									<li><a href="/Home/Categories/?cat=Bikes">Bicycles</a></li>
+									<li><a href="/Home/Categories/?cat=Bikes">Spare Parts</a></li>
+									<div class="clearfix"></div>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="category">
+								<div class="category-img">
+									<img src="images/cat5.png" title="image" alt="" />
+								</div>
+								<div class="category-info">
+									<h4>Furniture</h4>
+									<a href="/Home/Categories/?cat=Furniture">View all Shops</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="sub-categories">
+								<ul>
+									<li><a href="/Home/Categories/?cat=Furniture">Sofa & Dining</a></li>
+									<li><a href="/Home/Categories/?cat=Furniture">Beds & Wardrobes</a></li>
+									<li><a href="/Home/Categories/?cat=Furniture">Home Decor & Garden</a></li>
+									<li><a href="/Home/Categories/?cat=Furniture">Other Household Items</a></li>
+									<div class="clearfix"></div>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="category">
+								<div class="category-img">
+									<img src="../Content/images/cat6.png" title="image" alt="" />
+								</div>
+								<div class="category-info">
+									<h4>Pets</h4>
+									<a href="/Home/Categories/?cat=Pets">View all Shops</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="sub-categories">
+								<ul>
+									<li><a href="/Home/Categories/?cat=Pets">Dogs</a></li>
+									<li><a href="/Home/Categories/?cat=Pets">Aquariums</a></li>
+									<li><a href="/Home/Categories/?cat=Pets">Pet Food & Accessories</a></li>
+									<li><a href="/Home/Categories/?cat=Pets">Other Pets</a></li>
+									<div class="clearfix"></div>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="category">
+								<div class="category-img">
+									<img src="../Content/images/cat7.png" title="image" alt="" />
+								</div>
+								<div class="category-info">
+									<h4>Books, Sports & Hobbies</h4>
+									<a href="/Home/Categories/?cat=Books">View all Shops</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="sub-categories">
+								<ul>
+									<li><a href="/Home/Categories/?cat=Books">Books & Magazines</a></li>
+									<li><a href="/Home/Categories/?cat=Books">Musical Instruments</a></li>
+									<li><a href="/Home/Categories/?cat=Books">Sports Equipment</a></li>
+									<li><a href="/Home/Categories/?cat=Books">Gym & Fitness</a></li>
+									<li><a href="/Home/Categories/?cat=Books">Other Hobbies</a></li>
+									<div class="clearfix"></div>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="category">
+								<div class="category-img">
+									<img src="../Content/images/cat8.png" title="image" alt="" />
+								</div>
+								<div class="category-info">
+									<h4>Fashion</h4>
+									<a href="/Home/Categories/?cat=Fashion">View all Shops</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="sub-categories">
+								<ul>
+									<li><a href="/Home/Categories/?cat=Fashion">Clothes</a></li>
+									<li><a href="/Home/Categories/?cat=Fashion">Footwear</a></li>
+									<li><a href="/Home/Categories/?cat=Fashion">Accessories</a></li>
+									<div class="clearfix"></div>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="category">
+								<div class="category-img">
+									<img src="../Content/images/cat9.png" title="image" alt="" />
+								</div>
+								<div class="category-info">
+									<h4>Kids</h4>
+									<a href="/Home/Categories/?cat=Kids">View all Shops</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="sub-categories">
+								<ul>
+									<li><a href="/Home/Categories/?cat=Kids">Furniture And Toys</a></li>
+									<li><a href="/Home/Categories/?cat=Kids">Prams & Walkers</a></li>
+									<li><a href="/Home/Categories/?cat=Kids">Accessories</a></li>
+									<div class="clearfix"></div>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="category">
+								<div class="category-img">
+									<img src="../Content/images/cat10.png" title="image" alt="" />
+								</div>
+								<div class="category-info">
+									<h4>Services</h4>
+									<a href="/Home/Categories/?cat=Services">View all Shops</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="sub-categories">
+								<ul>
+									<li><a href="/Home/Categories/?cat=Services">Education & Classes</a></li>
+									<li><a href="/Home/Categories/?cat=Services">Web Development</a></li>
+									<li><a href="/Home/Categories/?cat=Services">Electronics & Computer Repair</a></li>
+									<li><a href="/Home/Categories/?cat=Services">Maids & Domestic Help</a></li>
+									<li><a href="/Home/Categories/?cat=Services">Health & Beauty</a></li>
+									<li><a href="/Home/Categories/?cat=Services">Movers & Packers</a></li>
+									<li><a href="/Home/Categories/?cat=Services">Drivers & Taxi</a></li>
+									<li><a href="/Home/Categories/?cat=Services">Event Services</a></li>
+									<li><a href="/Home/Categories/?cat=Services">Other Services</a></li>
+									<div class="clearfix"></div>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="category">
+								<div class="category-img">
+									<img src="../Content/images/cat11.png" title="image" alt="" />
+								</div>
+								<div class="category-info">
+									<h4>Jobs</h4>
+									<a href="/Home/Categories/?cat=Jobs">View all Shops</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="sub-categories">
+								<ul>
+									<li><a href="/Home/Categories/?cat=Jobs">Customer Service</a></li>
+									<li><a href="/Home/Categories/?cat=Jobs">IT</a></li>
+									<li><a href="/Home/Categories/?cat=Jobs">Online</a></li>
+									<li><a href="/Home/Categories/?cat=Jobs">Marketing</a></li>
+									<li><a href="/Home/Categories/?cat=Jobs">Advertising & PR</a></li>
+									<li><a href="/Home/Categories/?cat=Jobs">Sales</a></li>
+									<li><a href="/Home/Categories/?cat=Jobs">Clerical & Administration</a></li>
+									<li><a href="/Home/Categories/?cat=Jobs">Human Resources</a></li>
+									<li><a href="/Home/Categories/?cat=Jobs">Education</a></li>
+									<li><a href="/Home/Categories/?cat=Jobs">Hotels & Tourism</a></li>
+									<li><a href="/Home/Categories/?cat=Jobs">Accounting & Finance</a></li>
+									<li><a href="/Home/Categories/?cat=Jobs">Manufacturing</a></li>
+									<li><a href="/Home/Categories/?cat=Jobs">Part - Time</a></li>
+									<li><a href="/Home/Categories/?cat=Jobs">Other Jobs</a></li>
+									<div class="clearfix"></div>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="category">
+								<div class="category-img">
+									<img src="../Content/images/cat12.png" title="image" alt="" />
+								</div>
+								<div class="category-info">
+									<h4>Real Estate</h4>
+									<a href="/Home/Categories/?cat=Real Estate">View all Shops</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="sub-categories">
+								<ul>
+									<li><a href="/Home/Categories/?cat=Real Estate">Houses</a></li>
+									<li><a href="/Home/Categories/?cat=Real Estate">Apartments</a></li>
+									<li><a href="/Home/Categories/?cat=Real Estate">PG & Roommates</a></li>
+									<li><a href="/Home/Categories/?cat=Real Estate">Land & Plots</a></li>
+									<li><a href="/Home/Categories/?cat=Real Estate">Shops - Offices - Commercial Space</a></li>
+									<li><a href="/Home/Categories/?cat=Real Estate">Vacation Rentals - Guest Houses</a></li>
+									<div class="clearfix"></div>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Plug-in Initialisation-->
+	<script type="text/javascript">
+    $(document).ready(function() {
+
+        //Vertical Tab
+        $('#parentVerticalTab').easyResponsiveTabs({
+            type: 'vertical', //Types: default, vertical, accordion
+            width: 'auto', //auto or any width like 600px
+            fit: true, // 100% fit in a container
+            closed: 'accordion', // Start closed if in accordion view
+            tabidentify: 'hor_1', // The tab groups identifier
+            activate: function(event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#nested-tabInfo2');
+                var $name = $('span', $info);
+                $name.text($tab.text());
+                $info.show();
+            }
+        });
+    });
+</script>
+	<!-- //Categories -->
+    @Html.Partial("_footer");
+</body>
+</html>

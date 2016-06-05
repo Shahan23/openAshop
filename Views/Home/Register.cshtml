@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/Content/css/bootstrap-select.css">
+<link href="~/Content/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="~/Content/css/flexslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="~/Content/css/font-awesome.min.css" />
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function()
+     { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->	
+<!-- js -->
+<script type="text/javascript" src="~/Content/js/jquery.min.js"></script>
+<!-- js -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="~/Content/js/bootstrap.min.js"></script>
+<script src="~/Content/js/bootstrap-select.js"></script>
+<script type="text/javascript" src="~/Content/js/jquery.leanModal.min.js"></script>
+<link href="~/Content/css/jquery.uls.css" rel="stylesheet"/>
+<link href="~/Content/css/jquery.uls.grid.css" rel="stylesheet"/>
+<link href="~/Content/css/jquery.uls.lcd.css" rel="stylesheet"/>
+<!-- Source -->
+<script src="~/Content/js/jquery.uls.data.js"></script>
+<script src="~/Content/js/jquery.uls.data.utils.js"></script>
+<script src="~/Content/js/jquery.uls.lcd.js"></script>
+<script src="~/Content/js/jquery.uls.languagefilter.js"></script>
+<script src="~/Content/js/jquery.uls.regionfilter.js"></script>
+<script src="~/Content/js/jquery.uls.core.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+<script src="~/Content/js/bootstrap-select.js"></script>
+</head>
+
+
+    <body>
+
+        <div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="/Home/Index"><span>open</span>Ashop</a>
+			</div>
+        </div>
+        </div>
+      <div class="submit-ad main-grid-border">
+		<div class="container">
+			<h2 class="head">Register!</h2>
+			<div class="post-ad-form">
+				<form method="post" action="/Home/registerUser">
+					<label>Select Category of shop<span>*</span></label>
+					<select class="" name ="cat">
+					  <option>Select Category</option>
+					  <option>Mobiles</option>
+					  <option>Electronics and Appliances</option>
+					  <option>Cars</option>
+					  <option>Bikes</option>
+					  <option>Furniture</option>
+					  <option>Pets</option>
+					  <option>Books, Sports and hobbies</option>
+					  <option>Fashion</option>
+					  <option>Kids</option>
+					  <option>Services</option>
+					  <option>Real, Estate</option>
+					</select>
+					<div class="clearfix"></div>
+					<label>Shop Title <span>*</span></label>
+					<input type="text" name="Shopname" class="phone" placeholder="">
+					<div class="clearfix"></div>
+					<label>About shop <span>*</span></label>
+					<textarea class="mess" placeholder="Write few lines about your products in shop"></textarea>
+					<div class="clearfix"></div>
+					<div class="personal-details">
+						<label>Your Name <span>*</span></label>
+						<input type="text" class="name" name="name" placeholder="">
+						<div class="clearfix"></div>
+						<label>Your Mobile No <span>*</span></label>
+						<input type="number" class="phone" name="mobile" >
+						<div class="clearfix"></div>
+						<label>Your Email Address<span>*</span></label>
+						<input type="email" class="email" name="email" placeholder="">
+						<div class="clearfix"></div>
+						<p class="post-terms">By clicking <strong>Register Button</strong> you accept our <a href="#" target="_blank">Terms of Use </a> and <a href="#" target="_blank">Privacy Policy</a></p>					
+					<div class="clearfix"></div>
+					</div>
+                   <input type="submit" value="Register">
+                </form>
+			</div>
+		</div>	
+	</div>
+        @Html.Partial("_footer");	
+</body>
+</html>
